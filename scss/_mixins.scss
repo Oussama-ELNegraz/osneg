@@ -1,0 +1,8 @@
+@mixin headingSize($var) {
+  @each $size in $var {
+    h#{index($var,$size)} {
+      line-height: 1.2;
+      font-size: $size;
+    }
+  }
+}

@@ -1,0 +1,161 @@
+.hide {
+  display: none;
+}
+
+.display {
+  display: block !important;
+}
+
+.scroll {
+  overflow: hidden;
+}
+
+/************************************************** Position **************************************************/
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.x-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.y-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-arround {
+  justify-content: space-around;
+}
+
+.flex-x-center {
+  justify-content: center;
+}
+
+.flex-y-center {
+  align-items: center;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 991px) {
+  .col-lg1 {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .col-md1 {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .col-sm-md1 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .col-sm1 {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 991px) {
+  .col-lg2 {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .col-md2 {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .col-sm-md2 {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .col-sm2 {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 991px) {
+  .col-lg3 {
+    width: 33.3333333333%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .col-md3 {
+    width: 33.3333333333%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .col-sm-md3 {
+    width: 33.3333333333%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .col-sm3 {
+    width: 33.3333333333%;
+  }
+}
+@media screen and (min-width: 991px) {
+  .col-lg4 {
+    width: 25%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .col-md4 {
+    width: 25%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .col-sm-md4 {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .col-sm4 {
+    width: 25%;
+  }
+}
+@keyframes leftToRight {
+  0% {
+    left: -50%;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes rightToLeft {
+  0% {
+    right: -50%;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+/*# sourceMappingURL=special.css.map */

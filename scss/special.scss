@@ -1,0 +1,98 @@
+.hide {
+  display: none;
+}
+.display {
+  display: block !important;
+}
+.scroll {
+  overflow: hidden;
+}
+/************************************************** Position **************************************************/
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.x-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.y-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+//************************************************** Flex *****************************************************
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.space-between {
+  justify-content: space-between;
+}
+.space-arround {
+  justify-content: space-around;
+}
+.flex-x-center {
+  justify-content: center;
+}
+.flex-y-center {
+  align-items: center;
+}
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+@for $i from 1 through 4 {
+  @media screen and (min-width: 991px) {
+    .col-lg#{$i} {
+      width: 100% / $i;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .col-md#{$i} {
+      width: 100% / $i;
+    }
+  }
+  @media screen and (min-width: 480px) {
+    .col-sm-md#{$i} {
+      width: 100% / $i;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .col-sm#{$i} {
+      width: 100% / $i;
+    }
+  }
+}
+//************************************************** Animation *****************************************************
+@keyframes leftToRight {
+  0%{
+    left: -50%;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes rightToLeft {
+  0%{
+    right: -50%;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+
+
+
+
+
+
+
